@@ -3,9 +3,11 @@
 <head>
   <title>Batalha dos ganhos exponenciais - Criptomoeda vs small Caps</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -23,17 +25,80 @@
                 <div class="botoes">
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm">
-                                <a href="#TimeCriptomoeda" class="botao_cabecalho_esquerdo">Criptomoeda</a>
+                            <div class="col-12 col-lg">
+                                <button type="button" class="botao_cabecalho_esquerdo" data-toggle="modal" data-target="#myModal">Criptomoeda</button>
+                                <div class="modal fade" id="myModal">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                      
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form action="/action_page.php">
+                                                <p class="modal-title">Time de Criptomoedas</p>
+                                                <p class="modal-text">Inscreva-se para entrar no <b>#TEAMCRYPTO:</b></p>
+                                                <div class="form-group">
+                                                  <label for="email">Coloque seu E-mail:</label>
+                                                  <input type="email" class="form-control" placeholder="E=mail" id="email">
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="name">Nome:</label>
+                                                  <input type="Name" class="form-control" placeholder="Nome Completo" id="name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="phone">Telefone:</label>
+                                                    <input type="phone" class="form-control" placeholder="Telefone" id="phone">
+                                                  </div>
+                                                <button type="submit" class="enviar">Entrar no Time Cripto</button>
+                                              </form>
+                                        </div>                                
+                                      </div>
+                                    </div>
+                                  </div>
                             </div>
-                            <div class="col-sm">
-                                <p style="font-family: 'Bebas Neue', cursive; font-weight: 500;
-                                 font-size:55px; line-height: 1; margin-top: 75px; color: black;">
+                            <div class="col-12 col-lg">
+                                <p class="ou">
                                     ou
                                 </p> 
                             </div>
-                            <div class="col-sm">
-                                <a href="#TimeSmallCaps" class="botao_cabecalho_direito">Small Caps</a>
+                            <div class="col-12 col-lg">
+                                <button type="button" class="botao_cabecalho_direito" data-toggle="modal" data-target="#myModal2">Small Caps</button>
+                                <div class="modal fade" id="myModal2">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                      
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <form action="/action_page.php">
+                                                <p class="modal-title">Time de Small Caps</p>
+                                                <p class="modal-text">Inscreva-se para entrar no <b>#TEAMSMALL:</b></p>
+                                                <div class="form-group">
+                                                  <label for="email">Coloque seu E-mail:</label>
+                                                  <input type="email" class="form-control" placeholder="E=mail" id="email">
+                                                </div>
+                                                <div class="form-group">
+                                                  <label for="name">Nome:</label>
+                                                  <input type="Name" class="form-control" placeholder="Nome Completo" id="name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="phone">Telefone:</label>
+                                                    <input type="phone" class="form-control" placeholder="Telefone" id="phone">
+                                                  </div>
+                                                <button type="submit" class="enviar2">Entrar no time Small</button>
+                                              </form>
+                                        </div>                                
+                                      </div>
+                                    </div>
+                                  </div>
                             </div>
                         </div>
                     </div>
@@ -47,7 +112,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <iframe src="https://player.vimeo.com/video/470766646?color=dcdd00&title=0&byline=0&portrait=0&autoplay=1"
-                width="640" height="360" frameborder="0" allow="autoplay; fullscreen" style=" display: block; margin-left: auto; margin-right: auto; margin-top: 120px;">
+                frameborder="0" allow="autoplay; fullscreen" class="player">
                 </iframe>
             </div>
         </div>
@@ -70,13 +135,13 @@
                 <nav>
                     <ul class="rodelas">
                         <li>
-                            <img src="image/21-dias.png" alt="21 Dias" style="width: 200px;">
+                            <img src="image/21-dias.png" alt="21 Dias">
                         </li>
                         <li>
-                            <img src="image/Premio.png" alt="Prêmio de R$1.500" style="width: 200px; margin: 0 150px 0 150px;">
+                            <img src="image/Premio.png" alt="Prêmio de R$1.500">
                         </li>
                         <li>
-                            <img src="image/Gratis.png" alt="100% Grátis" style="width: 200px;">
+                            <img src="image/Gratis.png" alt="100% Grátis">
                         </li>
                     </ul>
                 </nav>        
@@ -95,35 +160,53 @@
     </div>
     <div class="container">
         <div class="row">
+            <div class="col-2">
+                <img class="list" src="image/Controle.png" alt="">
+            </div>
+            <div class="col-10">
+                <p class="rules-list" ><i>Cada investidor deverá escolher apenas um lado:<br>
+                    <b>Small Caps ou Criptomoedas.</b></i></p>                
+            </div>
+            <div class="col-2">
+                <img class="list" src="image/Gráfico.png" alt="">
+            </div>
+            <div class="col-10">
+                <p class="rules-list" ><i>Você vai receber recomendações das ações e das<br>
+                    criptomoedas para <b>lucrar no curtíssimo prazo.</b></i></p>                
+            </div>
+            <div class="col-2">
+                <img class="list" src="image/Telegram.png" alt="">
+            </div>
+            <div class="col-10">
+                <p class="rules-list" ><i>Direito a grupo no <b>Telegram</b> com membros da <br>
+                sua equipe.</i></p>                
+            </div>
+            <div class="col-2">
+                <img class="list" src="image/Pc.png" alt="">
+            </div>
+            <div class="col-10">
+                <p class="rules-list" ><i>Converse <b>ao vivo</b> direto com os analistas nas<br>redes sociais.</i></p>                
+            </div>
+            <div class="col-2">
+                <img class="list" src="image/Dinheiro.png" alt="">
+            </div>
+            <div class="col-10">
+                <p class="rules-list" ><i>Receba <b>atualizações sobre os mercados</b> cripto<br>
+                    e de ações diretamente dos especialistas.</i></p>                
+            </div>
+            <div class="col-2">
+                <img class="list" src="image/Data.png" alt="">
+            </div>
+            <div class="col-10">
+                <p class="rules-list" ><i>Durante <b>21 dias</b> você terá o acompanhamento<br>
+                    da equipe para investir na prática.</i></p>                
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
             <div class="col-sm">
-                <ul class="regras">
-                    <li>
-                        <img src="image/Controle.png" alt=""> <i style="position:relative; top: -10px; padding-left: 10px;">Cada investidor deverá escolher apenas um lado:<br>
-                        <b style="padding-left: 80px;">Small Caps ou Criptomoedas.</b></i>
-                        
-                    </li>
-                    <li>
-                        <img src="image/Gráfico.png" alt=""><i style="position:relative; top: -10px; padding-left: 20px;">Você vai receber recomendações das ações e das<br>
-                            <i style="padding-left: 80px;">criptomoedas para</i> <b>lucrar no curtíssimo prazo.
-                            </b></i>
-                    </li>
-                    <li>
-                        <img src="image/Telegram.png" alt=""><i style="position:relative; top: 3px; padding-left: 20px;">Direito a <b>grupo no telegram</b> com membros da sua equipe.</i>
-                    </li>
-                    <li>
-                        <img src="image/Pc.png" alt=""><i style="position:relative; top: 3px; padding-left: 20px;">Converse <b>ao vivo</b> direto com os analistas nas redes sociais.
-                        </i>
-                    </li>
-                    <li>
-                        <img src="image/Dinheiro.png" alt=""><i style="position:relative; top: -10px; padding-left: 20px;">Receba <b>atualizações sobre os mercados</b> cripto e de ações
-                            <i style="padding-left: 80px;">diretamente dos especialistas.</i></i>
-                    </li>
-                    <li>
-                        <img src="image/Data.png" alt=""><i style="position:relative; top: -10px; padding-left: 20px;"><b>Durante 21 dias</b> você terá o acompanhamento da equipe
-                            <i style="padding-left: 80px;">para investir na prática.</i></i>
-                    </li>
-                </ul>
-                <p id="nota"><i>Pedimos para que nunca invista mais do que 10% do seu capital neste tipo de estratégia.</i></p>
+                <p class="nota">Pedimos para que nunca invista mais do que 10% do seu capital neste tipo de estratégia.</p>
             </div>
         </div>
     </div>
@@ -135,13 +218,14 @@
         <div class="row">
             <div class="col-sm">
                 <div class="primeira_chamada">
-                    <p>Dois dos maiores especialistas do país em seus ativos…<br>
-                    <b>CRIPTOMOEDAS VS SMALL CAPS:</b><br> A batalha do ano!</p>
+                    <i>Dois dos maiores especialistas do país em seus ativos…<br></i>
+                    <b>CRIPTOMOEDAS VS SMALL CAPS:</b><br>
+                    <i>A batalha do ano!</i>
                 </div>
                 <img class="vs" src="image/vs.png" alt="Versos">
                 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
                 <div class="row vertical-divider" style="padding-top: 30px">
-                <div class="col-sm-6">
+                <div class="col-12 col-sm-6">
                     <p class="team">#teamcrypto<br>
                         #helenamargarido
                     </p>
@@ -156,7 +240,7 @@
                         214% com criptomoedas.<br>
                     </p>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-12 col-sm-6">
                     <p class="team">
                         #teamsmall<br>
                         #leonardopontes
@@ -187,11 +271,11 @@
         <div class="row">
             <div class="col-sm">
                 <div class="row" style="padding-top: 30px">
-                    <div class="col-sm-6" id="TimeCriptomoeda">
-                        <iframe src="https://player.vimeo.com/video/470766646?color=dcdd00&title=0&byline=0&portrait=0&autoplay=1"
-                            width="480" height="270" frameborder="0" allow="autoplay; fullscreen" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;">
+                    <div class="col-12 col-sm-6" >
+                        <iframe class="miniplay" src="https://player.vimeo.com/video/470766646?color=dcdd00&title=0&byline=0&portrait=0&autoplay=1"
+                        frameborder="0" allow="autoplay; fullscreen">
                         </iframe>
-                        <p class="titulo">
+                        <p class="titulo" id="TimeCriptomoeda">
                             Time de Criptomoedas:
                         </p>
                         <p class="text">
@@ -210,15 +294,48 @@
                             É iniciante?<br>
                             Receba guias de como operar criptomoedas.<br>
                         </p>
-                        <a href="" class="button_footer">Entrar para o time<br>Criptomoeda</a>
+                        <button type="button" class="button_footer" data-toggle="modal" data-target="#myModal">Entrar para o time<br>Criptomoeda</button>
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                              
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <form action="/action_page.php">
+                                        <p class="modal-title">Time de Criptomoedas</p>
+                                        <p class="modal-text">Inscreva-se para entrar no <b>#TEAMCRYPTO:</b></p>
+                                        <div class="form-group">
+                                          <label for="email">Coloque seu E-mail:</label>
+                                          <input type="email" class="form-control" placeholder="E=mail" id="email">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="name">Nome:</label>
+                                          <input type="Name" class="form-control" placeholder="Nome Completo" id="name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone">Telefone:</label>
+                                            <input type="phone" class="form-control" placeholder="Telefone" id="phone">
+                                          </div>
+                                        <button type="submit" class="enviar">Enviar</button>
+                                      </form>
+                                </div>                                
+                              </div>
+                            </div>
+                          </div>
                     </div>
-                    <div class="col-sm-6" id="TimeSmallCaps">
-                        <iframe src="https://player.vimeo.com/video/470766646?color=dcdd00&title=0&byline=0&portrait=0&autoplay=1"
-                            width="480" height="270" frameborder="0" allow="autoplay; fullscreen" style="display: block; margin-left: auto; margin-right: auto; margin-top: 30px;">
+                    <div class="col-12 col-sm-6" >
+                        <iframe class="miniplay" src="https://player.vimeo.com/video/470766646?color=dcdd00&title=0&byline=0&portrait=0&autoplay=1"
+                            frameborder="0" allow="autoplay; fullscreen">
                         </iframe>
-                        <p class="titulo">
+                        <p class="titulo" id="TimeSmallCaps">
                             Time de Small Caps:
                         </p>
+                        
                         <p class="text">
                             Recomendações abertas de ações<br>
                             small caps para vencer a batalha de 21 dias.<br>
@@ -235,7 +352,7 @@
                             É iniciante?<br>
                             Receba guias de como operar ações small caps.<br>
                         </p>
-                        <a href="" class="button_footer2">Entrar para o time<br>Small Caps</a>
+                        <button type="button" class="button_footer2" data-toggle="modal" data-target="#myModal2">Entrar para o time<br>Small Caps</button>
                     </div>
                 </div>
             </div>
