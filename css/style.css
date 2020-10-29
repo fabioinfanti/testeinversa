@@ -1,33 +1,38 @@
+a{
+    text-decoration: none;
+}
+
 .background_cabecalho{
-
+    background-image: url(../image/Background-1.jpg);
+    height: 971px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.logo{
+.center{
     display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 70px;
-}
-
-#batalha {
-    width: 908px;
-    margin: auto;
-    margin-top: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 100px;
 }
 
 .centralizado{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     font-size: 41.72px;
     line-height: 1;
-    margin-top: 90px;
+    margin-top: 60px;
     color: black;
 }
 
-.button{
+.botoes {
+    text-align: center;
+}
+
+.botao_cabecalho_esquerdo{
     font-family: 'Bebas Neue', cursive;
     background-color: #000000;
     border: none;
@@ -40,13 +45,17 @@
     cursor: pointer;
     border-radius: 90px;
     box-shadow: 0 0 20px 2px #000;
-    float: left;
     position: relative;
-    top: -80px;
+    top: 65px;
+    left: 120px;
 }
 
+.botao_cabecalho_esquerdo:hover{
+    text-decoration: none;
+    color: white;
+}
 
-.button2{
+.botao_cabecalho_direito{
     font-family: 'Bebas Neue', cursive;
     background-color: #f2e403;
     border: none;
@@ -59,21 +68,12 @@
     cursor: pointer;
     border-radius: 90px;
     box-shadow: 0 0 20px 2px #f2e403;
-    float: right;
     position: relative;
-    top: -80px;
+    top: 65px;
+    right: 120px;
 }
 
-a{
-    text-decoration: none;
-}
-
-.button:hover{
-    text-decoration: none;
-    color: white;
-}
-
-.button2:hover {
+.botao_cabecalho_direito:hover {
     text-decoration: none;
     color: black;
 }
@@ -81,16 +81,25 @@ a{
 .video{
     background-color: black;
     width: 100%;
-    height: 800px;
+    height: 600px;
 }
 
-.informações{
+.background_middle {
+    background-image: url(../image/Background-2.jpg);
+    height: 1700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.informacoes{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     color: black;
     font-size: 28px;
     margin-top: 100px;
 }
+
 .rodelas{  
     text-align: center;
     padding-left: 50px;
@@ -101,15 +110,20 @@ a{
     display: inline-block;
  }
 
-.batalha{
-    width: 950px;
-    height: 120px;
-    background-color: #f2e403;
-    box-shadow: 0 0 20px 2px #f2e403;
-    margin-top: 100px;
-}
+ .regras_batalha {
+    font-family: 'Bebas Neue', coursive;
+    font-size: 90px;
+    text-align: right;
+    color: black;
+    background: #f2e403;
+    margin-top: 50px;
+    padding-right: 40px;
+    position: relative;
+    left: -470px;
+    height: 125px;
+ }
 
-.regras {
+ .regras {
     text-decoration: none;
     margin-bottom: 50px;
     width: 1080px;
@@ -133,71 +147,79 @@ a{
     margin-bottom: 50px;
 }
 
-#fundo{
+.versos {
     background-color: black;
-    width: 100%;
-    height: 2650px;
+    height: 2600px;
 }
 
-.chamada {
+.primeira_chamada {
     font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     color: white;
     text-align: center;
     padding-top: 60px;
 }
 
+.vs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080;
+    margin-top: 50px;
+}
+
 .row.vertical-divider {
     overflow: hidden;
-  }
-  .row.vertical-divider > div[class^="col-"] {
+}
+.row.vertical-divider > div[class^="col-"] {
     text-align: center;
     padding-bottom: 100px;
     margin-bottom: -100px;
     border-left: 3px solid #F2F7F9;
     border-right: 3px solid #F2F7F9;
-  }
-  .row.vertical-divider div[class^="col-"]:first-child {
+}
+
+.row.vertical-divider div[class^="col-"]:first-child {
     border-left: none;
-  }
-  .row.vertical-divider div[class^="col-"]:last-child {
+}
+
+.row.vertical-divider div[class^="col-"]:last-child {
     border-right: none;
-  }
+}
 
-  .team{
+.team{
     text-align: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: 600;
-    padding-left: 360px;
     line-height: 1.2;
-  }
-
-  .team2{
-    text-align: center;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    padding-right: 360px;
-    line-height: 1.2;
-  }
+}
 
 .text {
     text-align: center;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    padding-left: 360px;   
+    font-size: 20px;  
+    margin-top: 30px;
 }
 
-.text2 {
-    text-align: center;
+.segunda_chamada {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    padding-right: 360px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 1;
+}
+
+.titulo{
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 .button_footer{
@@ -211,10 +233,11 @@ a{
     cursor: pointer;
     border-radius: 90px;
     box-shadow: 0 0 20px 2px #ffffff;
-    position: relative;
-    float: right;
-    right: 145px;
-    margin-top: 100px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 60%;
 }
 
 .button_footer:hover{
@@ -233,46 +256,16 @@ a{
     cursor: pointer;
     border-radius: 90px;
     box-shadow: 0 0 20px 2px #f2e403;
-    position: relative;
-    float: left;
-    left: 145px;
-    margin-top: 100px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 60%;
 }
 
 .button_footer2:hover{
     text-decoration: none;
     color: black;
-}
-
-.chamada2 {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 60px;
-    color: white;
-    text-align: center;
-    padding-top: 60px;
-    line-height: 1;
-}
-
-.titulo{
-    font-family: 'Bebas Neue', cursive;
-    color: #ffffff;
-    text-align: center;
-    font-size: 45px;
-    position: relative;
-    left: 170px;
-    top: 30px;
-    margin-bottom: 40px;
-}
-
-.titulo2{
-    font-family: 'Bebas Neue', cursive;
-    color: #ffffff;
-    text-align: center;
-    font-size: 45px;
-    position: relative;
-    right: 170px;
-    top: 30px;
-    margin-bottom: 40px;
 }
 
 /*----- Footer -----*/
