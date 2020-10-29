@@ -1,0 +1,333 @@
+body{
+    background-image: url(../image/background.jpg);
+}
+
+.logo{
+    vertical-align: middle;
+    border-style: none;
+    width: 700px;
+    position: relative;
+    left: 105px;
+}
+
+#batalha {
+    width: 908px;
+    margin: auto;
+    margin-top: 105px;
+}
+
+.centralizado{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 41.72px;
+    line-height: 1;
+    margin-top: 90px;
+    color: black;
+}
+
+.button{
+    font-family: 'Bebas Neue', cursive;
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 5px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 45px;
+    cursor: pointer;
+    border-radius: 90px;
+    box-shadow: 0 0 20px 2px #000;
+    float: left;
+    position: relative;
+    top: -80px;
+}
+
+
+.button2{
+    font-family: 'Bebas Neue', cursive;
+    background-color: #f2e403;
+    border: none;
+    color: black;
+    padding: 5px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 45px;
+    cursor: pointer;
+    border-radius: 90px;
+    box-shadow: 0 0 20px 2px #f2e403;
+    float: right;
+    position: relative;
+    top: -80px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.button2:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.video{
+    background-color: black;
+    width: 100%;
+    height: 800px;
+}
+
+.informações{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    margin-top: 100px;
+}
+.rodelas{  
+    text-align: center;
+    padding-left: 50px;
+    margin-top: 50px;
+  }
+   
+.rodelas li {
+    display: inline-block;
+ }
+
+.batalha{
+    width: 950px;
+    height: 120px;
+    background-color: #f2e403;
+    box-shadow: 0 0 20px 2px #f2e403;
+    margin-top: 100px;
+}
+
+.regras {
+    text-decoration: none;
+    margin-bottom: 50px;
+    width: 1080px;
+    margin: 100px auto;
+}
+
+.regras li {
+    margin-bottom: 30px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: black;
+    line-height: 0;
+}
+
+#nota{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+}
+
+#fundo{
+    background-color: black;
+    width: 100%;
+    height: 2650px;
+}
+
+.chamada {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.row.vertical-divider {
+    overflow: hidden;
+  }
+  .row.vertical-divider > div[class^="col-"] {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: -100px;
+    border-left: 3px solid #F2F7F9;
+    border-right: 3px solid #F2F7F9;
+  }
+  .row.vertical-divider div[class^="col-"]:first-child {
+    border-left: none;
+  }
+  .row.vertical-divider div[class^="col-"]:last-child {
+    border-right: none;
+  }
+
+  .team{
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 360px;
+    line-height: 1.2;
+  }
+
+  .team2{
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    padding-right: 360px;
+    line-height: 1.2;
+  }
+
+.text {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-left: 360px;   
+}
+
+.text2 {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding-right: 360px;
+}
+
+.button_footer{
+    font-family: 'Bebas Neue', cursive;
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    padding: 5px 55px;
+    text-align: center;
+    font-size: 45px;
+    cursor: pointer;
+    border-radius: 90px;
+    box-shadow: 0 0 20px 2px #ffffff;
+    position: relative;
+    float: right;
+    right: 145px;
+    margin-top: 100px;
+}
+
+.button_footer:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.button_footer2{
+    font-family: 'Bebas Neue', cursive;
+    background-color: #f2e403;
+    border: none;
+    color: black;
+    padding: 5px 55px;
+    text-align: center;
+    font-size: 45px;
+    cursor: pointer;
+    border-radius: 90px;
+    box-shadow: 0 0 20px 2px #f2e403;
+    position: relative;
+    float: left;
+    left: 145px;
+    margin-top: 100px;
+}
+
+.button_footer2:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.chamada2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 1;
+}
+
+.titulo{
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+    text-align: center;
+    font-size: 45px;
+    position: relative;
+    left: 170px;
+    top: 30px;
+    margin-bottom: 40px;
+}
+
+.titulo2{
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+    text-align: center;
+    font-size: 45px;
+    position: relative;
+    right: 170px;
+    top: 30px;
+    margin-bottom: 40px;
+}
+
+/*----- Footer -----*/
+.footer {
+    background-color: #101010;
+    padding: 30px 0;
+    text-align: center;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.footer-disclaimer-title {
+    color: #525252;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-disclaimer {
+    color: #525252;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #525252;
+    text-decoration: none;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    color: #6a6a6a;
+}
+
+.footer-logo {
+    display: block;
+    max-width: 60px;
+    margin: 15px auto;
+    opacity: .5;
+}
+
+.footer-copyright {
+    color: #525252;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+.footer p {
+    line-height: 1.5;
+}
+
+.footer a {
+    display: inline-block;
+    font-size: 12px;
+    width: unset;
+    padding: 0;
+}
