@@ -1,381 +1,385 @@
 <html>
 
 <head>
-  <title>Batalha dos ganhos exponenciais - Criptomoeda vs small Caps</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Batalha dos ganhos exponenciais - Criptomoeda vs small Caps</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-<div class="background_cabecalho">
-    <div class="container">
-        <div class="row">  
-            <div class="col-sm-12">
-                <img class="center" src="image/bat-logo.png" alt="">
-                <p class="centralizado">
-                    Quem dá mais dinheiro<br>
-                    no curto prazo:
-                </p>
-                <div class="botoes">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg">
-                                <button type="button" class="botao_cabecalho_esquerdo" data-toggle="modal" data-target="#myModal">Criptomoeda</button>
-                                <div class="modal fade" id="myModal">
-                                    <div class="modal-dialog">
-                                      <div class="modal-content">
-                                      
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <div class="background_cabecalho">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="center" src="image/bat-logo.png" alt="">
+                    <p class="centralizado">
+                        Quem dá mais dinheiro<br>
+                        no curto prazo:
+                    </p>
+                    <div class="botoes">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-lg">
+                                    <button type="button" class="botao_cabecalho_esquerdo" data-toggle="modal"
+                                        data-target="#myModal">Criptomoeda</button>
+                                    <div class="modal fade" id="myModal">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <button type="button" class="close"
+                                                        data-dismiss="modal">&times;</button>
+                                                </div>
+
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <p class="modal-title">Time de Criptomoedas</p>
+                                                        <p class="modal-text">Inscreva-se para entrar no
+                                                            <b>#TEAMCRYPTO:</b></p>
+                                                        <div class="form-group">
+                                                            <label for="email">Coloque seu E-mail:</label>
+                                                            <input type="email" class="form-control"
+                                                                placeholder="E=mail" id="email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="name">Nome:</label>
+                                                            <input type="Name" class="form-control"
+                                                                placeholder="Nome Completo" id="name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="phone">Telefone:</label>
+                                                            <input type="phone" class="form-control"
+                                                                placeholder="Telefone" id="phone">
+                                                        </div>
+                                                        <button onclick="myFunction()" class="enviar">Entrar no Time Cripto</button>
+                                                        <script>
+                                                            function myFunction() {
+                                                              confirm("E-mail cadastrado com sucesso");
+                                                            }
+                                                        </script>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         </div>
-                                        
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                            <form action="/action_page.php">
-                                                <p class="modal-title">Time de Criptomoedas</p>
-                                                <p class="modal-text">Inscreva-se para entrar no <b>#TEAMCRYPTO:</b></p>
-                                                <div class="form-group">
-                                                  <label for="email">Coloque seu E-mail:</label>
-                                                  <input type="email" class="form-control" placeholder="E=mail" id="email">
-                                                </div>
-                                                <div class="form-group">
-                                                  <label for="name">Nome:</label>
-                                                  <input type="Name" class="form-control" placeholder="Nome Completo" id="name">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="phone">Telefone:</label>
-                                                    <input type="phone" class="form-control" placeholder="Telefone" id="phone">
-                                                  </div>
-                                                <button type="submit" class="enviar">Entrar no Time Cripto</button>
-                                              </form>
-                                        </div>                                
-                                      </div>
                                     </div>
-                                  </div>
-                            </div>
-                            <div class="col-12 col-lg">
-                                <p class="ou">
-                                    ou
-                                </p> 
-                            </div>
-                            <div class="col-12 col-lg">
-                                <button type="button" class="botao_cabecalho_direito" data-toggle="modal" data-target="#myModal2">Small Caps</button>
-                                <div class="modal fade" id="myModal2">
-                                    <div class="modal-dialog">
-                                      <div class="modal-content">
-                                      
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <p class="ou">
+                                        ou
+                                    </p>
+                                </div>
+                                <div class="col-12 col-lg">
+                                    <button type="button" class="botao_cabecalho_direito" data-toggle="modal"
+                                        data-target="#myModal2">Small Caps</button>
+                                    <div class="modal fade" id="myModal2">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+
+                                                <!-- Modal Header -->
+                                                <div class="modal-header">
+                                                    <button type="button" class="close"
+                                                        data-dismiss="modal">&times;</button>
+                                                </div>
+
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <p class="modal-title">Time de Small Caps</p>
+                                                        <p class="modal-text">Inscreva-se para entrar no
+                                                            <b>#TEAMSMALL:</b></p>
+                                                        <div class="form-group">
+                                                            <label for="email">Coloque seu E-mail:</label>
+                                                            <input type="email" class="form-control"
+                                                                placeholder="E=mail" id="email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="name">Nome:</label>
+                                                            <input type="Name" class="form-control"
+                                                                placeholder="Nome Completo" id="name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="phone">Telefone:</label>
+                                                            <input type="phone" class="form-control"
+                                                                placeholder="Telefone" id="phone">
+                                                        </div>
+                                                        <button onclick="myFunction()" class="enviar2">Entrar no time Small</button>
+                                                        <script>
+                                                            function myFunction() {
+                                                              confirm("E-mail cadastrado com sucesso");
+                                                            }
+                                                        </script>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         </div>
-                                        
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                            <form action="/action_page.php">
-                                                <p class="modal-title">Time de Small Caps</p>
-                                                <p class="modal-text">Inscreva-se para entrar no <b>#TEAMSMALL:</b></p>
-                                                <div class="form-group">
-                                                  <label for="email">Coloque seu E-mail:</label>
-                                                  <input type="email" class="form-control" placeholder="E=mail" id="email">
-                                                </div>
-                                                <div class="form-group">
-                                                  <label for="name">Nome:</label>
-                                                  <input type="Name" class="form-control" placeholder="Nome Completo" id="name">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="phone">Telefone:</label>
-                                                    <input type="phone" class="form-control" placeholder="Telefone" id="phone">
-                                                  </div>
-                                                <button type="submit" class="enviar2">Entrar no time Small</button>
-                                              </form>
-                                        </div>                                
-                                      </div>
                                     </div>
-                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-              </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="video">
-    <div class="container">    
-        <div class="row">
-            <div class="col-sm-12">
-                <iframe src="https://player.vimeo.com/video/470766646?color=dcdd00&title=0&byline=0&portrait=0&autoplay=1"
-                frameborder="0" allow="autoplay; fullscreen" class="player">
-                </iframe>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="background_middle">
-    <div class="container">
-        <div class="row">
-            <div class="informacoes">
-                <p>Vamos abrir pela primeira vez na história uma <b>BATALHA DE INVESTIMENTOS</b><br>
-                    cujo objetivo é um só:<br>
-                    <b>FAZER VOCÊ OBTER GANHOS EXPONENCIAIS EM 21 DIAS</b><br>
-                    <br>
-                    Os investidores vencedores vão receber <b>UM PRÊMIO NO VALOR DE R$1.500</b><br>
-                    e ainda poder lucrar <b>SEM CUSTO NENHUM</b> durante o período da batalha.<br>
-                    <br>
-                    Todos os detalhes chegarão no seu e-mail após sua<br>
-                    <b>INSCRIÇÃO 100% ONLINE E 100% GRATUITA</b><br>
-                </p>
-                <nav>
-                    <ul class="rodelas">
-                        <li>
-                            <img src="image/21-dias.png" alt="21 Dias">
-                        </li>
-                        <li>
-                            <img src="image/Premio.png" alt="Prêmio de R$1.500">
-                        </li>
-                        <li>
-                            <img src="image/Gratis.png" alt="100% Grátis">
-                        </li>
-                    </ul>
-                </nav>        
-            </div>  
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="regras_batalha">
-                    <p>Regras da Batalha</p>
                 </div>
             </div>
         </div>
-
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-2">
-                <img class="list" src="image/Controle.png" alt="">
-            </div>
-            <div class="col-10">
-                <p class="rules-list" ><i>Cada investidor deverá escolher apenas um lado:<br>
-                    <b>Small Caps ou Criptomoedas.</b></i></p>                
-            </div>
-            <div class="col-2">
-                <img class="list" src="image/Gráfico.png" alt="">
-            </div>
-            <div class="col-10">
-                <p class="rules-list" ><i>Você vai receber recomendações das ações e das<br>
-                    criptomoedas para <b>lucrar no curtíssimo prazo.</b></i></p>                
-            </div>
-            <div class="col-2">
-                <img class="list" src="image/Telegram.png" alt="">
-            </div>
-            <div class="col-10">
-                <p class="rules-list" ><i>Direito a grupo no <b>Telegram</b> com membros da <br>
-                sua equipe.</i></p>                
-            </div>
-            <div class="col-2">
-                <img class="list" src="image/Pc.png" alt="">
-            </div>
-            <div class="col-10">
-                <p class="rules-list" ><i>Converse <b>ao vivo</b> direto com os analistas nas<br>redes sociais.</i></p>                
-            </div>
-            <div class="col-2">
-                <img class="list" src="image/Dinheiro.png" alt="">
-            </div>
-            <div class="col-10">
-                <p class="rules-list" ><i>Receba <b>atualizações sobre os mercados</b> cripto<br>
-                    e de ações diretamente dos especialistas.</i></p>                
-            </div>
-            <div class="col-2">
-                <img class="list" src="image/Data.png" alt="">
-            </div>
-            <div class="col-10">
-                <p class="rules-list" ><i>Durante <b>21 dias</b> você terá o acompanhamento<br>
-                    da equipe para investir na prática.</i></p>                
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <p class="nota">Pedimos para que nunca invista mais do que 10% do seu capital neste tipo de estratégia.</p>
-            </div>
-        </div>
-    </div>
-    
-
-</div>
-<div class="versos">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="primeira_chamada">
-                    <i>Dois dos maiores especialistas do país em seus ativos…<br></i>
-                    <b>CRIPTOMOEDAS VS SMALL CAPS:</b><br>
-                    <i>A batalha do ano!</i>
+    <div class="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <iframe
+                        src="https://player.vimeo.com/video/470766646?color=dcdd00&title=0&byline=0&portrait=0&autoplay=1"
+                        frameborder="0" allow="autoplay; fullscreen" class="player">
+                    </iframe>
                 </div>
-                <img class="vs" src="image/vs.png" alt="Versos">
-                <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
-                <div class="row vertical-divider" style="padding-top: 30px">
-                <div class="col-12 col-sm-6">
-                    <p class="team">#teamcrypto<br>
-                        #helenamargarido
-                    </p>
-                    <p class="text">
-                        Advogada, especialista em<br>
-                        tecnologia, criptomoedas<br>
-                        e pioneira em investimentos<br>
-                        cripto para investidores<br>
-                        pessoa física no Brasil.<br>
+            </div>
+        </div>
+    </div>
+    <div class="background_middle">
+        <div class="container">
+            <div class="row">
+                <div class="informacoes">
+                    <p>Vamos abrir pela primeira vez na história uma <b>BATALHA DE INVESTIMENTOS</b><br>
+                        cujo objetivo é um só:<br>
+                        <b>FAZER VOCÊ OBTER GANHOS EXPONENCIAIS EM 21 DIAS</b><br>
                         <br>
-                        Performance 2019:<br>
-                        214% com criptomoedas.<br>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <p class="team">
-                        #teamsmall<br>
-                        #leonardopontes
-                    </p>
-                    <p class="text">
-                        Engenheiro do ITA, CFA,<br>
-                        CNPI, CQF e especialista<br>
-                        em programação<br>
-                        e investimentos em ações.<br>
+                        Os investidores vencedores vão receber <b>UM PRÊMIO NO VALOR DE R$1.500</b><br>
+                        e ainda poder lucrar <b>SEM CUSTO NENHUM</b> durante o período da batalha.<br>
                         <br>
-                        Leonardo vive Small Caps<br>
-                        há mais de 20 anos.<br>
-                        <br>    
-                        Performance em 2019:<br>
-                        79% com small caps.<br>
-
+                        Todos os detalhes chegarão no seu e-mail após sua<br>
+                        <b>INSCRIÇÃO 100% ONLINE E 100% GRATUITA</b><br>
                     </p>
-                </div>
-                </div>
-                <div class="segunda_chamada">
-                    <p>Escolha um lado e lucre alto por 21 dias seguidos.<br>
-                        Batalha será <b style="color: #f2e403;">100% gratuita e 100% online.</b></p>
+                    <nav>
+                        <ul class="rodelas">
+                            <li>
+                                <img src="image/21-dias.png" alt="21 Dias">
+                            </li>
+                            <li>
+                                <img src="image/Premio.png" alt="Prêmio de R$1.500">
+                            </li>
+                            <li>
+                                <img src="image/Gratis.png" alt="100% Grátis">
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="row" style="padding-top: 30px">
-                    <div class="col-12 col-sm-6" >
-                        <iframe class="miniplay" src="https://player.vimeo.com/video/470766646?color=dcdd00&title=0&byline=0&portrait=0&autoplay=1"
-                        frameborder="0" allow="autoplay; fullscreen">
-                        </iframe>
-                        <p class="titulo" id="TimeCriptomoeda">
-                            Time de Criptomoedas:
-                        </p>
-                        <p class="text">
-                            Recomendações abertas de criptomoedaspara<br>
-                            vencer a batalha de 21 dias.<br>
-                            <br>
-                            Receba o link fechado do grupo no<br> 
-                            Telegram da Helena Margarido.<br>
-                            <br>
-                            Acompanhamento do mercado<br>
-                            feito pela equipe da Helena.<br>
-                            <br>
-                            Lives nas redes sociais<br>
-                            para falar com a especialista.<br>
-                            <br>
-                            É iniciante?<br>
-                            Receba guias de como operar criptomoedas.<br>
-                        </p>
-                        <button type="button" class="button_footer" data-toggle="modal" data-target="#myModal">Entrar para o time<br>Criptomoeda</button>
-                        <div class="modal fade" id="myModal">
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                              
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <form action="/action_page.php">
-                                        <p class="modal-title">Time de Criptomoedas</p>
-                                        <p class="modal-text">Inscreva-se para entrar no <b>#TEAMCRYPTO:</b></p>
-                                        <div class="form-group">
-                                          <label for="email">Coloque seu E-mail:</label>
-                                          <input type="email" class="form-control" placeholder="E=mail" id="email">
-                                        </div>
-                                        <div class="form-group">
-                                          <label for="name">Nome:</label>
-                                          <input type="Name" class="form-control" placeholder="Nome Completo" id="name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="phone">Telefone:</label>
-                                            <input type="phone" class="form-control" placeholder="Telefone" id="phone">
-                                          </div>
-                                        <button type="submit" class="enviar">Enviar</button>
-                                      </form>
-                                </div>                                
-                              </div>
-                            </div>
-                          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="regras_batalha">
+                        <p>Regras da Batalha</p>
                     </div>
-                    <div class="col-12 col-sm-6" >
-                        <iframe class="miniplay" src="https://player.vimeo.com/video/470766646?color=dcdd00&title=0&byline=0&portrait=0&autoplay=1"
-                            frameborder="0" allow="autoplay; fullscreen">
-                        </iframe>
-                        <p class="titulo" id="TimeSmallCaps">
-                            Time de Small Caps:
-                        </p>
-                        
-                        <p class="text">
-                            Recomendações abertas de ações<br>
-                            small caps para vencer a batalha de 21 dias.<br>
-                            <br>
-                            Receba o link fechado do grupo no<br>
-                            Telegram do Leonardo Pontes.<br>
-                            <br>
-                            Acompanhamento do mercado<br>
-                            feito pela equipe do Leonardo.<br>
-                            <br>
-                            Lives nas redes sociais<br>
-                            para falar direto com o especialista.<br>
-                            <br>
-                            É iniciante?<br>
-                            Receba guias de como operar ações small caps.<br>
-                        </p>
-                        <button type="button" class="button_footer2" data-toggle="modal" data-target="#myModal2">Entrar para o time<br>Small Caps</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img class="list" src="image/Controle.png" alt="">
+                </div>
+                <div class="col-10">
+                    <p class="rules-list"><i>Cada investidor deverá escolher apenas um lado:<br>
+                            <b>Small Caps ou Criptomoedas.</b></i></p>
+                </div>
+                <div class="col-2">
+                    <img class="list" src="image/Gráfico.png" alt="">
+                </div>
+                <div class="col-10">
+                    <p class="rules-list"><i>Você vai receber recomendações das ações e das<br>
+                            criptomoedas para <b>lucrar no curtíssimo prazo.</b></i></p>
+                </div>
+                <div class="col-2">
+                    <img class="list" src="image/Telegram.png" alt="">
+                </div>
+                <div class="col-10">
+                    <p class="rules-list"><i>Direito a grupo no <b>Telegram</b> com membros da <br>
+                            sua equipe.</i></p>
+                </div>
+                <div class="col-2">
+                    <img class="list" src="image/Pc.png" alt="">
+                </div>
+                <div class="col-10">
+                    <p class="rules-list"><i>Converse <b>ao vivo</b> direto com os analistas nas<br>redes sociais.</i>
+                    </p>
+                </div>
+                <div class="col-2">
+                    <img class="list" src="image/Dinheiro.png" alt="">
+                </div>
+                <div class="col-10">
+                    <p class="rules-list"><i>Receba <b>atualizações sobre os mercados</b> cripto<br>
+                            e de ações diretamente dos especialistas.</i></p>
+                </div>
+                <div class="col-2">
+                    <img class="list" src="image/Data.png" alt="">
+                </div>
+                <div class="col-10">
+                    <p class="rules-list"><i>Durante <b>21 dias</b> você terá o acompanhamento<br>
+                            da equipe para investir na prática.</i></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <p class="nota">Pedimos para que nunca invista mais do que 10% do seu capital neste tipo de
+                        estratégia.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="versos">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="primeira_chamada">
+                        <i>Dois dos maiores especialistas do país em seus ativos…<br></i>
+                        <b>CRIPTOMOEDAS VS SMALL CAPS:</b><br>
+                        <i>A batalha do ano!</i>
+                    </div>
+                    <img class="vs" src="image/vs.png" alt="Versos">
+                    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+                        rel="stylesheet" />
+                    <div class="row vertical-divider" style="padding-top: 30px">
+                        <div class="col-12 col-sm-6">
+                            <p class="team">#teamcrypto<br>
+                                #helenamargarido
+                            </p>
+                            <p class="text">
+                                Advogada, especialista em<br>
+                                tecnologia, criptomoedas<br>
+                                e pioneira em investimentos<br>
+                                cripto para investidores<br>
+                                pessoa física no Brasil.<br>
+                                <br>
+                                Performance 2019:<br>
+                                214% com criptomoedas.<br>
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <p class="team">
+                                #teamsmall<br>
+                                #leonardopontes
+                            </p>
+                            <p class="text">
+                                Engenheiro do ITA, CFA,<br>
+                                CNPI, CQF e especialista<br>
+                                em programação<br>
+                                e investimentos em ações.<br>
+                                <br>
+                                Leonardo vive Small Caps<br>
+                                há mais de 20 anos.<br>
+                                <br>
+                                Performance em 2019:<br>
+                                79% com small caps.<br>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="segunda_chamada">
+                        <p>Escolha um lado e lucre alto por 21 dias seguidos.<br>
+                            Batalha será <b style="color: #f2e403;">100% gratuita e 100% online.</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="row" style="padding-top: 30px">
+                        <div class="col-12 col-sm-6">
+                            <iframe class="miniplay"
+                                src="https://player.vimeo.com/video/470766646?color=dcdd00&title=0&byline=0&portrait=0&autoplay=1"
+                                frameborder="0" allow="autoplay; fullscreen">
+                            </iframe>
+                            <p class="titulo" id="TimeCriptomoeda">
+                                Time de Criptomoedas:
+                            </p>
+                            <p class="text">
+                                Recomendações abertas de criptomoedaspara<br>
+                                vencer a batalha de 21 dias.<br>
+                                <br>
+                                Receba o link fechado do grupo no<br>
+                                Telegram da Helena Margarido.<br>
+                                <br>
+                                Acompanhamento do mercado<br>
+                                feito pela equipe da Helena.<br>
+                                <br>
+                                Lives nas redes sociais<br>
+                                para falar com a especialista.<br>
+                                <br>
+                                É iniciante?<br>
+                                Receba guias de como operar criptomoedas.<br>
+                            </p>
+                            <button type="button" class="button_footer" data-toggle="modal"
+                                data-target="#myModal">Entrar para o time<br>Criptomoeda</button>
+
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <iframe class="miniplay"
+                                src="https://player.vimeo.com/video/470766646?color=dcdd00&title=0&byline=0&portrait=0&autoplay=1"
+                                frameborder="0" allow="autoplay; fullscreen">
+                            </iframe>
+                            <p class="titulo" id="TimeSmallCaps">
+                                Time de Small Caps:
+                            </p>
+
+                            <p class="text">
+                                Recomendações abertas de ações<br>
+                                small caps para vencer a batalha de 21 dias.<br>
+                                <br>
+                                Receba o link fechado do grupo no<br>
+                                Telegram do Leonardo Pontes.<br>
+                                <br>
+                                Acompanhamento do mercado<br>
+                                feito pela equipe do Leonardo.<br>
+                                <br>
+                                Lives nas redes sociais<br>
+                                para falar direto com o especialista.<br>
+                                <br>
+                                É iniciante?<br>
+                                Receba guias de como operar ações small caps.<br>
+                            </p>
+                            <button type="button" class="button_footer2" data-toggle="modal"
+                                data-target="#myModal2">Entrar para o time<br>Small Caps</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<footer class="footer">
-    <div class="container">
-        <img class="footer-logo"
-            src="https://inversa-arquivos.s3.amazonaws.com/templates/emails/logo/logo-footer-inversa-white.png"
-            alt="Inversa Publicações">
-        <p class="footer-copyright">© 2020 Inversa Publicações — Todos os direitos reservados.</p>
-        <div class="footer-disclaimer-container">
-            <p class="footer-disclaimer-title">Disclosure</p>
-            <p class="footer-disclaimer">A Inversa é uma Casa de Análise independente, regulada pela CVM e pela
-                APIMEC, fundada em 2017 com um objetivo: ajudar as pessoas a investirem com mais sabedoria, para
-                ganharem mais retorno para o seu dinheiro. Não somos ligados a instituições financeiras, por isso
-                temos total liberdade para dizer o que realmente é bom para o investidor brasileiro.</p>
-            <p class="footer-disclaimer">Se quiser saber mais sobre a Inversa, <a class="footer-link"
-                    href="https://inversa.com.br" target="_blank">acesse nosso website</a> ou envie um e-mail para
-                <a class="footer-link" href="mailto:contato@inversa.com.br">contato@inversa.com.br</a>.</p>
+    <footer class="footer">
+        <div class="container">
+            <img class="footer-logo"
+                src="https://inversa-arquivos.s3.amazonaws.com/templates/emails/logo/logo-footer-inversa-white.png"
+                alt="Inversa Publicações">
+            <p class="footer-copyright">© 2020 Inversa Publicações — Todos os direitos reservados.</p>
+            <div class="footer-disclaimer-container">
+                <p class="footer-disclaimer-title">Disclosure</p>
+                <p class="footer-disclaimer">A Inversa é uma Casa de Análise independente, regulada pela CVM e pela
+                    APIMEC, fundada em 2017 com um objetivo: ajudar as pessoas a investirem com mais sabedoria, para
+                    ganharem mais retorno para o seu dinheiro. Não somos ligados a instituições financeiras, por isso
+                    temos total liberdade para dizer o que realmente é bom para o investidor brasileiro.</p>
+                <p class="footer-disclaimer">Se quiser saber mais sobre a Inversa, <a class="footer-link"
+                        href="https://inversa.com.br" target="_blank">acesse nosso website</a> ou envie um e-mail para
+                    <a class="footer-link" href="mailto:contato@inversa.com.br">contato@inversa.com.br</a>.</p>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
+
 </html>
